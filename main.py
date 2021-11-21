@@ -71,4 +71,3 @@ if __name__ == '__main__':
     contacts = join_duplicates(contacts)
     contacts[0][2] = 'patronymic'
     write_file(contacts)
-
