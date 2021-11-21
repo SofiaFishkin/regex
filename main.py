@@ -1,12 +1,13 @@
+from pprint import pprint
 import re
 import csv
 
 
-def read_file(file_name):
+def read_file(phonebook_raw):
     with open("phonebook_raw.csv") as f:
       rows = csv.reader(f, delimiter=",")
       contacts_list = list(rows)
-    print(contacts_list)
+    pprint(contacts_list)
 
 
 def phone_number(contacts_list):
