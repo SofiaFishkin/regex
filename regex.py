@@ -7,7 +7,7 @@ def read_file (phonebook_raw):
  with open(os.path.join(os.path.dirname("/Users/rachelfishkin/Desktop/Studying/pro/regex"))) as f:
       rows = csv.reader(f, delimiter=",")
       contacts_list = list(rows)
- pprint(os.path(contacts_list))
+pprint(os.path(contacts_list))
 
 
 def phone_number(contacts_list):
@@ -69,5 +69,5 @@ if __name__ == '__main__':
     contacts = phone_number(contacts)
     contacts = format_full_name(contacts)
     contacts = join_duplicates(contacts)
-    contacts[0][2] = 'patronymic'
-    write_file(contacts)
+    contacts[0][2] = 'dn'
+    write_file(contacts) 
